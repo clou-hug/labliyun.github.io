@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人简历表格</title>
+  <style>
+    /* 统一页面字体样式 */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f7ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      margin: 50px auto;
+      min-width: 600px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果，使表格更立体 */
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #ccc; /* 调整边框颜色为浅灰色，使边框更柔和 */
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin: 0 auto;
+      object-fit: cover; /* 确保图片完全覆盖单元格，且不失真 */
+    }
+
+    th,
+    td {
+      padding: 15px;
+      text-align: left;
+      vertical-align: top; /* 单元格内容垂直顶部对齐 */
+    }
+
+    caption {
+      font-size: 2em;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f9f9f9;
+      text-transform: uppercase; /* 表头文字转为大写 */
+      font-weight: bold;
+      letter-spacing: 0.05em; /* 增加字母间距 */
+    }
+
+    /* 奇偶行背景色交替，便于区分 */
+    tr:nth-child(even) {
+      background-color: #f5f5f5;
+    }
+
+    /* 调整照片所在单元格的样式 */
+    th[rowspan="3"],
+    td[rowspan="3"] {
+      vertical-align: middle; /* 让照片所在单元格垂直居中对齐 */
+      text-align: center; /* 让照片所在单元格水平居中对齐 */
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <table>
+    <caption><i class="fa-solid fa-address-card"></i> 个人简历</caption>
+    <tr>
+      <th><i class="fa-solid fa-user"></i> 姓名</th>
+      <td>李云</td>
+      <th><i class="fa-solid fa-mars-venus"></i> 性别</th>
+      <td>女</td>
+      <th><i class="fa-solid fa-birthday-cake"></i> 年龄</th>
+      <td>19</td>
+      <th rowspan="3"><img src="lab2-1-283.jpg" alt="个人照片"></th>
+    </tr>
+    <tr>
+      <th><i class="fa-solid fa-map-location"></i> 籍贯</th>
+      <td>山东省潍坊市</td>
+      <th><i class="fa-solid fa-phone"></i> 联系电话</th>
+      <td>188888888</td>
+      <th><i class="fa-solid fa-envelope"></i> 电子邮箱</th>
+      <td>1235@qq.com</td>
+    </tr>
+    <tr>
+      <th><i class="fa-solid fa-graduation-cap"></i> 学历</th>
+      <td>大学本科</td>
+      <th><i class="fa-solid fa-heart-pulse"></i> 健康状况</th>
+      <td>良好</td>
+      <th><i class="fa-solid fa-ring"></i> 婚姻状况</th>
+      <td>未婚</td>
+    </tr>
+    <tr>
+      <th><i class="fa-solid fa-briefcase"></i> 求职意向</th>
+      <td colspan="2">专业：软件工程</td>
+      <td colspan="2">毕业院校：鲁东大学</td>
+    </tr>
+    <tr>
+      <th><i class="fa-solid fa-certificate"></i> 技能证书</th>
+      <td colspan="5">无</td>
+    </tr>
+    <tr>
+      <th><i class="fa-solid fa-star"></i> 个人特长与爱好</th>
+      <td colspan="5">羽毛球</td>
+    </tr>
+    <tr>
+      <th><i class="fa-solid fa-comment"></i> 自我评价</th>
+      <td colspan="5">在过往的学习和工作中，我始终保持着对知识的强烈渴望以及对工作的高度热忱。在学习阶段，凭借不懈的努力，不仅掌握了扎实的专业理论知识，还积极参加各类实践活动，将理论与实际相结合，锻炼了自己的动手能力。步入职场后，我凭借良好的沟通和团队协作能力，与同事建立了高效的合作关系，成功推动多个项目的顺利开展。面对工作中的难题，我从不退缩，而是通过查阅资料、请教他人等方式，努力找到解决方案，这极大地提升了我的问题解决能力。此外，我善于自我反思，定期回顾自己的工作表现，总结经验教训，持续优化工作方法，提高工作效率。我坚信，这些经历和能力，能助力我在未来的岗位上发光发热 。</td>
+    </tr>
+  </table>
+</body>
+
+</html>
